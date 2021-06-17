@@ -40,7 +40,7 @@ jobs:
               uses: ballerina-platform/ballerina-action/@nightly
               with:
                   args:
-                      build -c ./eventhub
+                      build -c --skip-tests ./eventhub
               env:
                 JAVA_HOME: /usr/lib/jvm/default-jvm
                 SAS_KEY_NAME: ${{ secrets.SAS_KEY_NAME }}
